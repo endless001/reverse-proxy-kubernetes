@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{12A21AA7-7497-4C29-87AC-F7C452CF3CB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubernetes.Gateway", "src\Kubernetes.Gateway\Kubernetes.Gateway.csproj", "{4C5BB4A8-8BC6-4BEB-84A4-EB1894B1EDDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubernetes.Gateway.Controller", "src\Kubernetes.Gateway.Controller\Kubernetes.Gateway.Controller.csproj", "{F8F5FA8A-745A-4D21-B0C2-B996447600E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubernetes.Yarp.Proxy", "src\Kubernetes.Yarp.Proxy\Kubernetes.Yarp.Proxy.csproj", "{7AC349E8-2211-4146-B934-F1223056FE64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C5BB4A8-8BC6-4BEB-84A4-EB1894B1EDDA} = {12A21AA7-7497-4C29-87AC-F7C452CF3CB0}
+		{F8F5FA8A-745A-4D21-B0C2-B996447600E1} = {12A21AA7-7497-4C29-87AC-F7C452CF3CB0}
+		{7AC349E8-2211-4146-B934-F1223056FE64} = {12A21AA7-7497-4C29-87AC-F7C452CF3CB0}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C5BB4A8-8BC6-4BEB-84A4-EB1894B1EDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5BB4A8-8BC6-4BEB-84A4-EB1894B1EDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5BB4A8-8BC6-4BEB-84A4-EB1894B1EDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5BB4A8-8BC6-4BEB-84A4-EB1894B1EDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F5FA8A-745A-4D21-B0C2-B996447600E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F5FA8A-745A-4D21-B0C2-B996447600E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F5FA8A-745A-4D21-B0C2-B996447600E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F5FA8A-745A-4D21-B0C2-B996447600E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC349E8-2211-4146-B934-F1223056FE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC349E8-2211-4146-B934-F1223056FE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC349E8-2211-4146-B934-F1223056FE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC349E8-2211-4146-B934-F1223056FE64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

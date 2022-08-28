@@ -1,0 +1,23 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: yarp
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: yarp-config
+  namespace: yarp
+data:
+  yarp.json: |
+    {
+      "Yarp": {
+        "ControllerClass": "microsoft.com/gateway-yarp"
+      }
+    }
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: yarp-serviceaccount
+  namespace: yarp
