@@ -16,8 +16,8 @@ public abstract class ResourceInformer<TResource, TListResource> : BackgroundHos
 {
     private readonly object _sync = new();
     private readonly GroupApiVersionKind _names;
-    private readonly SemaphoreSlim _ready = new SemaphoreSlim(0);
-    private readonly SemaphoreSlim _start = new SemaphoreSlim(0);
+    private readonly SemaphoreSlim _ready = new(0);
+    private readonly SemaphoreSlim _start = new(0);
     private ImmutableList<Registration> _registrations = ImmutableList<Registration>.Empty;
     private Dictionary<NamespacedName, IList<V1OwnerReference>> _cache = new();
     private string _lastResourceVersion;

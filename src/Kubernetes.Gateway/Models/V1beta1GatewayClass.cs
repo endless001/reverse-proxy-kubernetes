@@ -22,3 +22,14 @@ public class V1beta1GatewayClassSpec
     [JsonProperty(PropertyName = "controllerName")]
     public string ControllerName { get; set; }
 }
+
+public class V1beta1GatewayClassList : IKubernetesObject<V1ListMeta>,
+    IKubernetesObject,
+    IMetadata<V1ListMeta>,
+    IItems<V1beta1GatewayClass>
+{
+    public string ApiVersion { get; set; }
+    public string Kind { get; set; }
+    public V1ListMeta Metadata { get; set; }
+    public IList<V1beta1GatewayClass> Items { get; set; }
+}
